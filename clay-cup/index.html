@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Clay Cup – Sip from unique artistry</title>
-<meta name="description" content="Handmade ceramic mugs crafted by local potters in Lyon.">
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Clay Cup – 常规口味，请绕行</title>
+<meta name="description" content="欢迎来到怪味可乐实验室，探索独特的口味组合。">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Roboto:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;600;700&family=Noto+Sans+SC:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#ffffff;--ink:#333333;--primary:#4CAF50;--on-primary:#161616;--secondary:#A5D6A7;--on-secondary:#161616;--accent:#C8E6C9;--on-accent:#161616;
---radius:26px;--pill:999px;--shape:26px;--island:36px;--pad:124px;--fh:'Playfair Display',Georgia,serif;--fb:'Roboto',system-ui,-apple-system,sans-serif;--line:color-mix(in srgb,var(--ink) 16%,transparent);--soft:color-mix(in srgb,var(--ink) 70%,transparent)}
+:root{--bg:#FFF8E8;--ink:#111814;--primary:#D6FF3F;--on-primary:#161616;--secondary:#8B38CF;--on-secondary:#ffffff;--accent:#FF694A;--on-accent:#161616;
+--radius:26px;--pill:999px;--shape:26px;--island:36px;--pad:124px;--fh:'Noto Sans SC','Noto Sans SC','Microsoft YaHei',Georgia,serif;--fb:'Noto Sans SC','Noto Sans SC','Microsoft YaHei',system-ui,-apple-system,sans-serif;--line:color-mix(in srgb,var(--ink) 16%,transparent);--soft:color-mix(in srgb,var(--ink) 70%,transparent)}
 *{box-sizing:border-box;margin:0}html{scroll-behavior:smooth}main,footer{overflow-x:clip}
 body{background:var(--bg);color:var(--ink);font-family:var(--fb);font-size:17px;line-height:1.65;-webkit-font-smoothing:antialiased;overflow-x:hidden}
 h1,h2,h3{font-family:var(--fh);line-height:1.02;font-weight:700;letter-spacing:-.025em;}
@@ -41,7 +41,7 @@ section{padding:var(--pad) 0;position:relative}
 /* pictures: a coloured block first, the image fades in when ready */
 .pic{position:relative;overflow:hidden;border-radius:var(--radius);background:linear-gradient(150deg,var(--secondary),color-mix(in srgb,var(--accent) 60%,var(--secondary)))}
 .pic span{position:absolute;inset:0;display:grid;place-items:center;font:700 4rem var(--fh);color:var(--on-secondary);opacity:.22}
-.pic img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity .7s,transform .7s}.pic img.ok{opacity:1}
+.pic img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity .7s,transform .7s}.pic img.ok{opacity:1}.pic.cola-art img{object-fit:contain}.hero-split .pic.cola-art.big{aspect-ratio:16/9;border-radius:var(--radius)}.story-split .pic.cola-art.big{aspect-ratio:4/3;border-radius:var(--radius)}
 .pic.tall{aspect-ratio:4/5}.pic.square{aspect-ratio:1}.pic.big{border-radius:var(--shape)}.pic.mini{width:58px;aspect-ratio:1;border-radius:calc(var(--radius) * .6)}.pic.mini span,.pic.fan span{font-size:1.4rem}
 /* hero */
 .hero-split{padding-top:96px;overflow:hidden}.stage{position:relative}
@@ -133,26 +133,34 @@ footer{padding:80px 0 0;font-size:.92rem;overflow:hidden}
 details p{margin:14px 0 0}.facts{flex-wrap:wrap}}
 @media(max-width:520px){.products-featured .items{grid-template-columns:1fr}.top nav a:not(:last-child):nth-child(n+2){display:none}.top .bar{padding-left:20px}}
 @media(prefers-reduced-motion:reduce){.track{animation:none}.js .rv{opacity:1;transform:none}}
+h1{text-wrap:balance}
 </style></head>
 <body>
-<header class="top"><div class="bar"><a class="logo" href="#">Clay Cup</a><nav><a href="#story">Story</a><a href="#products">Shop</a><a href="#faq">FAQ</a></nav></div></header>
+<header class="top"><div class="bar"><a class="logo" href="#">Clay Cup</a><nav><a href="#products">口味档案</a><a href="#story">实验室</a><a href="#faq">FAQ</a><a href="#contact">概念店说明</a></nav></div></header>
 <main>
-<section class="hero hero-full"><div class="pic cover"><span>C</span><img data-src="https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2d/Hand_thrown_porcelain_mugs%2C_Downpatrick%2C_September_2010.JPG/960px-Hand_thrown_porcelain_mugs%2C_Downpatrick%2C_September_2010.JPG" alt="Clay Cup"></div><div class="veil"></div><div class="wrap rv"><p class="eyebrow"><b>✦</b>Clay Cup</p><h1>Sip from unique artistry</h1><p class="lead">Handmade ceramic mugs crafted by local potters in Lyon.</p>
-      <a class="btn" href="#products">Shop the collection <i>→</i></a><ul class="facts"><li><b>3</b><span>products</span></li><li><b>€25</b><span>starting price</span></li><li><b>4</b><span>questions answered</span></li></ul></div></section>
-<section class="story story-split" id="story"><div class="wrap two"><div class="stage rv"><b class="block alt"></b><div class="pic tall big"><span>C</span><img data-src="https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3a/Potter-helen-dixon-at-work3.jpg/960px-Potter-helen-dixon-at-work3.jpg" alt="Crafted with Passion"></div><span class="caption">Clay Cup</span></div>
-      <div><header class="head rv"><div><p class="eyebrow"><b>01</b>Our story</p><h2>Crafted with Passion</h2></div></header><p class="lead drop rv">At Clay Cup, we celebrate the artistry of ceramics, connecting you with local potters in Lyon.</p><p class="sign rv">— Clay Cup</p></div></div></section>
+<section class="hero hero-split"><b class="glow g3"></b><b class="dots"></b><div class="wrap two"><div class="rv"><p class="eyebrow"><b>✦</b>Clay Cup</p><h1>常规口味，请绕行</h1><p class="lead">欢迎来到怪味可乐实验室，探索独特的口味组合。</p>
+      <a class="btn" href="#products">挑选怪味 <i>→</i></a><ul class="facts"><li><b>6</b><span>款怪味可乐</span></li><li><b>¥18</b><span>示例起售价</span></li><li><b>4</b><span>个味觉问答</span></li></ul></div>
+      <div class="stage rv"><b class="block"></b><div class="pic tall big cola-art"><span>C</span><img data-src="https://viclant.github.io/my-shops/assets/cola/hero.png" alt="Clay Cup"></div><a class="chip" href="#products"><div class="pic mini cola-art"><span>香</span><img data-src="https://viclant.github.io/my-shops/assets/cola/cilantro-lime.svg" alt="香菜青柠可乐"></div><span><small>本次味觉实验</small><b>香菜青柠可乐</b><em>¥18</em></span></a></div></div></section>
+<div class="marquee marquee-tilted" aria-hidden="true"><div class="band back"><div class="track rev"><span>常规口味，请绕行</span><i>✦</i><span>大胆创新</span><i>✦</i><span>趣味实验</span><i>✦</i><span>独特包装</span><i>✦</i><span>Clay Cup</span><i>✦</i><span>常规口味，请绕行</span><i>✦</i><span>大胆创新</span><i>✦</i><span>趣味实验</span><i>✦</i><span>独特包装</span><i>✦</i><span>Clay Cup</span><i>✦</i><span>常规口味，请绕行</span><i>✦</i><span>大胆创新</span><i>✦</i><span>趣味实验</span><i>✦</i><span>独特包装</span><i>✦</i><span>Clay Cup</span><i>✦</i><span>常规口味，请绕行</span><i>✦</i><span>大胆创新</span><i>✦</i><span>趣味实验</span><i>✦</i><span>独特包装</span><i>✦</i><span>Clay Cup</span><i>✦</i></div></div><div class="band"><div class="track"><span>常规口味，请绕行</span><i>✦</i><span>大胆创新</span><i>✦</i><span>趣味实验</span><i>✦</i><span>独特包装</span><i>✦</i><span>Clay Cup</span><i>✦</i><span>常规口味，请绕行</span><i>✦</i><span>大胆创新</span><i>✦</i><span>趣味实验</span><i>✦</i><span>独特包装</span><i>✦</i><span>Clay Cup</span><i>✦</i><span>常规口味，请绕行</span><i>✦</i><span>大胆创新</span><i>✦</i><span>趣味实验</span><i>✦</i><span>独特包装</span><i>✦</i><span>Clay Cup</span><i>✦</i><span>常规口味，请绕行</span><i>✦</i><span>大胆创新</span><i>✦</i><span>趣味实验</span><i>✦</i><span>独特包装</span><i>✦</i><span>Clay Cup</span><i>✦</i></div></div></div>
 <section class="products products-grid" id="products"><div class="wrap">
-      <header class="head rv"><div><p class="eyebrow"><b>02</b>Shop</p><h2>Our Unique Mugs</h2><p class="sub">Explore our collection of handmade ceramic mugs.</p></div><span class="side">3 products</span></header>
-      <div class="items"><article class="product rv"><div class="frame"><div class="pic square"><span>A</span><img data-src="https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1c/Handmade_Ceramic_Mugs_%28made_and_photographed_by_Liina_Potter%29.jpg/960px-Handmade_Ceramic_Mugs_%28made_and_photographed_by_Liina_Potter%29.jpg" alt="Artisan Mug"></div><span class="idx">01</span></div>
-      <div class="info"><h3>Artisan Mug</h3><p>A beautifully crafted mug with unique glaze patterns.</p><div class="buy"><span class="price">€30</span><a href="#contact" aria-label="Ask about Artisan Mug">→</a></div></div></article><article class="product rv"><div class="frame"><div class="pic square"><span>S</span><img data-src="https://thumb.wikimedia.org/wikipedia/commons/thumb/7/77/Pigeon_River_Pottery_mug_-_November_2023_-_Sarah_Stierch.jpg/960px-Pigeon_River_Pottery_mug_-_November_2023_-_Sarah_Stierch.jpg" alt="Signature Cup"></div><span class="idx">02</span></div>
-      <div class="info"><h3>Signature Cup</h3><p>A signed piece by a local potter, perfect for coffee.</p><div class="buy"><span class="price">€35</span><a href="#contact" aria-label="Ask about Signature Cup">→</a></div></div></article><article class="product rv"><div class="frame"><div class="pic square"><span>R</span><img data-src="" alt="Rustic Ceramic Mug"></div><span class="idx">03</span></div>
-      <div class="info"><h3>Rustic Ceramic Mug</h3><p>Handmade with a rustic finish, ideal for cozy drinks.</p><div class="buy"><span class="price">€25</span><a href="#contact" aria-label="Ask about Rustic Ceramic Mug">→</a></div></div></article></div></div></section>
-<section class="faq faq-accordion" id="faq"><div class="wrap aside"><div class="sticky"><header class="head rv"><div><p class="eyebrow"><b>03</b>FAQ</p><h2>Questions &amp; answers</h2></div></header><p class="sub rv">Something else? <a href="#contact">Write to us</a>.</p></div>
-      <div><details class="rv" open><summary><b>01</b><span>How long does delivery take?</span><i></i></summary><p>Contact us and we will tell you.</p></details><details class="rv"><summary><b>02</b><span>Are the mugs dishwasher safe?</span><i></i></summary><p>Yes, all our mugs are dishwasher safe.</p></details><details class="rv"><summary><b>03</b><span>Can I return a mug if I don't like it?</span><i></i></summary><p>Yes, we accept returns within 30 days.</p></details><details class="rv"><summary><b>04</b><span>Do you offer international shipping?</span><i></i></summary><p>Contact us and we will tell you.</p></details></div></div></section>
+      <header class="head rv"><div><p class="eyebrow"><b>01</b>口味档案</p><h2>我们的可乐系列</h2><p class="sub">探索六款独特的330毫升可乐。</p></div><span class="side">6 款怪味</span></header>
+      <div class="items"><article class="product rv"><div class="frame"><div class="pic square cola-art"><span>香</span><img data-src="https://viclant.github.io/my-shops/assets/cola/cilantro-lime.svg" alt="香菜青柠可乐"></div><span class="idx">01</span></div>
+      <div class="info"><h3>香菜青柠可乐</h3><p>清新的香菜与酸酸的青柠结合。</p><div class="buy"><span class="price">¥18</span><a href="#contact" aria-label="了解香菜青柠可乐">→</a></div></div></article><article class="product rv"><div class="frame"><div class="pic square cola-art"><span>海</span><img data-src="https://viclant.github.io/my-shops/assets/cola/salt-caramel.svg" alt="海盐焦糖可乐"></div><span class="idx">02</span></div>
+      <div class="info"><h3>海盐焦糖可乐</h3><p>咸甜交织，带来烘焙的甜美。</p><div class="buy"><span class="price">¥20</span><a href="#contact" aria-label="了解海盐焦糖可乐">→</a></div></div></article><article class="product rv"><div class="frame"><div class="pic square cola-art"><span>烟</span><img data-src="https://viclant.github.io/my-shops/assets/cola/smoked-plum.svg" alt="烟熏乌梅可乐"></div><span class="idx">03</span></div>
+      <div class="info"><h3>烟熏乌梅可乐</h3><p>烟熏味与酸梅的完美融合。</p><div class="buy"><span class="price">¥22</span><a href="#contact" aria-label="了解烟熏乌梅可乐">→</a></div></div></article><article class="product rv"><div class="frame"><div class="pic square cola-art"><span>青</span><img data-src="https://viclant.github.io/my-shops/assets/cola/pepper-peach.svg" alt="青花椒白桃可乐"></div><span class="idx">04</span></div>
+      <div class="info"><h3>青花椒白桃可乐</h3><p>花香与白桃的清新碰撞。</p><div class="buy"><span class="price">¥24</span><a href="#contact" aria-label="了解青花椒白桃可乐">→</a></div></div></article><article class="product rv"><div class="frame"><div class="pic square cola-art"><span>辣</span><img data-src="https://viclant.github.io/my-shops/assets/cola/chili-cocoa.svg" alt="辣椒可可可乐"></div><span class="idx">05</span></div>
+      <div class="info"><h3>辣椒可可可乐</h3><p>辣味与可可的奇妙结合。</p><div class="buy"><span class="price">¥24</span><a href="#contact" aria-label="了解辣椒可可可乐">→</a></div></div></article><article class="product rv"><div class="frame"><div class="pic square cola-art"><span>咸</span><img data-src="https://viclant.github.io/my-shops/assets/cola/salted-egg.svg" alt="咸蛋黄奶盖可乐"></div><span class="idx">06</span></div>
+      <div class="info"><h3>咸蛋黄奶盖可乐</h3><p>咸蛋黄与奶油的趣味搭配。</p><div class="buy"><span class="price">¥26</span><a href="#contact" aria-label="了解咸蛋黄奶盖可乐">→</a></div></div></article></div></div></section>
+<section class="values values-inline" id="values"><div class="wrap"><div class="cols"><div class="value rv"><span class="num">01</span><h3>大胆创新</h3><p>我们为您带来前所未有的可乐口味体验。</p></div><div class="value rv"><span class="num">02</span><h3>趣味实验</h3><p>每一口都是一次味觉的冒险。</p></div><div class="value rv"><span class="num">03</span><h3>独特包装</h3><p>每款饮料都以独特的设计呈现。</p></div></div></div></section>
+<section class="story story-split" id="story"><div class="wrap two"><div class="stage rv"><b class="block alt"></b><div class="pic tall big cola-art"><span>味</span><img data-src="https://viclant.github.io/my-shops/assets/cola/story.svg" alt="味觉实验室的故事"></div><span class="caption">Clay Cup</span></div>
+      <div><header class="head rv"><div><p class="eyebrow"><b>02</b>味觉实验室</p><h2>味觉实验室的故事</h2></div></header><p class="lead drop rv">在怪味可乐实验室，我们探索各种奇特的口味组合。</p><p class="sign rv">— Clay Cup</p></div></div></section>
+<section class="faq faq-accordion" id="faq"><div class="wrap aside"><div class="sticky"><header class="head rv"><div><p class="eyebrow"><b>03</b>FAQ</p><h2>开罐前看这里</h2></div></header><p class="sub rv">还有其他脑洞？ <a href="#contact">查看概念店说明</a></p></div>
+      <div><details class="rv" open><summary><b>01</b><span>这些可乐的价格是真的吗？</span><i></i></summary><p>这是一个创意概念商店，价格仅供参考。</p></details><details class="rv"><summary><b>02</b><span>我可以在线下单吗？</span><i></i></summary><p>目前不接受在线订单或付款。</p></details><details class="rv"><summary><b>03</b><span>这些口味有什么特别之处？</span><i></i></summary><p>每款可乐都是独特的味觉实验。</p></details><details class="rv"><summary><b>04</b><span>商品图片是实拍吗？</span><i></i></summary><p>为这个概念店制作的原创包装视觉与插画，不代表实际库存。</p></details></div></div></section>
+<section class="contact contact-banner island" id="contact"><b class="glow g1"></b><b class="glow g2"></b><b class="dots"></b><div class="wrap narrow rv"><p class="eyebrow"><b>04</b>味觉实验室</p><h2>下一罐，交给你的脑洞</h2><p class="lead">这里是一间创意可乐概念店，口味与价格为展示示例，暂未开放下单和支付。</p><a class="btn" href="#products">返回口味档案 <i>→</i></a></div></section>
 </main>
-<footer><div class="wrap"><div class="foot"><div><h3>Clay Cup</h3><p>Sip from unique artistry</p></div><div><small>Explore</small><a href="#story">Story</a><a href="#products">Shop</a><a href="#faq">FAQ</a></div>
-<div><small>Contact</small><a href="mailto:hello@claycup.com">hello@claycup.com</a></div></div>
-<div class="legal"><span>© Clay Cup</span><span>Built by the Startup Studio – version 1</span></div></div><span class="giant">Clay Cup</span></footer>
+<footer><div class="wrap"><div class="foot"><div><h3>Clay Cup</h3><p>常规口味，请绕行</p></div><div><small>探索</small><a href="#products">口味档案</a><a href="#story">实验室</a><a href="#faq">FAQ</a><a href="#contact">概念店说明</a></div>
+<div><small>概念店说明</small><p>这里是一间创意可乐概念店，口味与价格为展示示例，暂未开放下单和支付。</p></div></div>
+<div class="legal"><span>© 怪味可乐实验室 / CLAY CUP COLA LAB · 创意口味与示例价格，暂不接受下单和支付。</span><span>创意口味与包装概念</span></div></div><span class="giant">Clay Cup</span></footer>
 <script>
 document.documentElement.classList.add('js');
 // Things appear when they enter the screen.
@@ -162,7 +170,7 @@ document.querySelectorAll('.rv').forEach((el) => io.observe(el));
 (async () => {
   for (const el of document.querySelectorAll('img[data-src]:not([data-src=""])')) {
     for (let attempt = 0; attempt < 3; attempt++) {
-      const ok = await new Promise((done) => { el.onload = () => done(true); el.onerror = () => done(false); el.src = el.dataset.src + (attempt ? '&retry=' + attempt : ''); });
+      const ok = await new Promise((done) => { el.onload = () => done(true); el.onerror = () => done(false); el.src = el.dataset.src + (attempt ? (el.dataset.src.includes('?') ? '&' : '?') + 'retry=' + attempt : ''); });
       if (ok) { el.classList.add('ok'); break; }
       await new Promise((r) => setTimeout(r, 4000));
     }
